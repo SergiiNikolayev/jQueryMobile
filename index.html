@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>jQuery Mobile</title>
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header"><h1>Шапка сайта</h1></div>
+    <div data-role="content">Контент</div>
+        <a href="checkbox.html" class="ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-b">Checkbox</a>
+        <a href="radio.html" class="ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-b" >Radio buttons</a>
+    <div data-role="content">Кнопки
+        <a href="checkbox.html" class="ui-btn">Button ui-btn | go to checkbox.html | href</a>
+        <a href="#" class="ui-btn ui-corner-all">Button ui-btn</a>
+        <button>Button button </button>
+        <button class="ui-btn ui-btn-inline ui-corner-all">ui-btn-inline </button>
+        <button class="ui-btn ui-btn-inline ui-btn-b">ui-btn-b</button>
+        <a href="checkbox.html" class="ui-btn ui-mini">ui-btn ui-mini</a>
+        <a href="checkbox.html" class="ui-btn ui-btn-inline ui-mini">ui-btn ui-mini checkbox.html</a>
+        <button class="ui-btn ui-icon-delete ui-btn-icon-left">Delete</button>
+
+        <button data-role="none" >none</button>
+        <hr>
+        <button class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left" onclick="$('#hide-me').hide()">Delete</button>
+        <button class="ui-btn ui-btn-inline ui-icon-checkbox ui-btn-icon-left" onclick="$('#hide-me').show()">Show</button>
+
+        <div data-role="content" id="hide-me" >some randome text can be deletted </div>
+
+    </div>
+
+
+    <div data-role="footer" data-position="fixed"><h4>Футер</h4></div>
+  </div>
+</body>
+</html>

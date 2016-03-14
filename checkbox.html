@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>jQuery Mobile</title>
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header"><h1>Шапка сайта</h1></div>
+    <div data-role="content">Контент</div>
+    <a href="index.html" class="ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-b">to main page</a>
+    <div data-role="content">Checkbox
+      <form>
+        <label>
+          <input type="checkbox" name="checkbox"/>Отметь меня
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" data-mini="true"/>data-mini
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox"/>Отметь меня
+        </label>
+      </form>
+      <form>
+        <fieldset data-role="controlgroup">
+            <input type="checkbox" name="checkbox1" id="checkbox1" />
+            <label for="checkbox1">1</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2" />
+            <label for="checkbox2">2</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3" />
+            <label for="checkbox3">3</label>
+        </fieldset>
+      </form>
+
+<!-- horizontall checkbox | data-type="horizontal"-->
+      <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <input type="checkbox" name="checkbox1" id="checkbox12" />
+            <label for="checkbox12">12</label>
+            <input type="checkbox" name="checkbox2" id="checkbox22" />
+            <label for="checkbox22">22</label>
+            <input type="checkbox" name="checkbox3" id="checkbox32" />
+            <label for="checkbox32">32</label>
+        </fieldset>
+      </form>
+
+<!-- right icins |  data-iconpos="right"-->
+      <form>
+        <fieldset data-role="controlgroup" data-iconpos="right">
+            <input type="checkbox" name="checkbox1" id="checkbox111" />
+            <label for="checkbox111">111</label>
+            <input type="checkbox" name="checkbox2" id="checkbox112" />
+            <label for="checkbox112">113</label>
+            <input type="checkbox" name="checkbox3" id="checkbox113" />
+            <label for="checkbox113">113</label>
+        </fieldset>
+      </form>
+
+<!-- right icins |  data-theme -->
+      <form>
+        <fieldset data-role="controlgroup">
+            <input type="checkbox" name="checkbox1" id="checkbox211" data-theme="b"/>
+            <label for="checkbox211">1</label>
+            <input type="checkbox" name="checkbox2" id="checkbox212" data-theme="b"/>
+            <label for="checkbox212">2</label>
+            <input type="checkbox" name="checkbox3" id="checkbox213" data-theme="b"/>
+            <label for="checkbox213">3</label>
+        </fieldset>
+      </form>
+
+    </div>
+
+
+    <div data-role="footer" data-position="fixed"><h4>Футер</h4></div>
+  </div>
+</body>
+</html>
